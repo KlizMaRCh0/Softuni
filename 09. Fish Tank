@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class WW {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int l = Integer.parseInt(scanner.nextLine());
+        int w = Integer.parseInt(scanner.nextLine());
+        int h = Integer.parseInt(scanner.nextLine());
+        double p = Double.parseDouble(scanner.nextLine());
+
+        int aqua = l * w * h;
+        double disko = aqua * 0.001;
+        double bla = p * 0.01;
+        double results = disko * (1 - bla);
+        System.out.printf("%.3f", results);
+    }
+}
