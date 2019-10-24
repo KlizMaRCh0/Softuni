@@ -1,0 +1,14 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class WW {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+       int dogsfood = Integer.parseInt(scanner.nextLine());
+       int ohtersfood = Integer.parseInt(scanner.nextLine());
+
+       double totalSum = dogsfood * 2.5 + ohtersfood * 4;
+       System.out.printf("%.2f lv.", totalSum);
+    }
+}
